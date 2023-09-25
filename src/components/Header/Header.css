@@ -1,0 +1,8 @@
+.overlay{
+    background: url('/src/assets/images/banner-bg.jpeg');
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.95);
+
+}
