@@ -2,16 +2,21 @@ import Banner from "./Banner/Banner";
 import Logo from "./Logo/Logo";
 import Navbar from "./Navbar/Navbar";
 import './Header.css'
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+
+    const loc = useLocation()
+
     return (
-        <div className="overlay">
+        <div className={loc.pathname === '/' ? 'overlay' : ''}>
             <div className="flex justify-between items-center max-w-[1300px] mx-auto px-5 pt-4">
             <Logo></Logo>
             <Navbar></Navbar>
             </div>
-            <Banner></Banner>
+            {loc.pathname === '/' && <Banner></Banner>}
         </div>
+
     );
 };
 
