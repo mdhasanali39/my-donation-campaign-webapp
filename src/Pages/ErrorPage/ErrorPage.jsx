@@ -4,7 +4,7 @@ const ErrorPage = () => {
   const error = useRouteError();
   console.log(error);
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center min-h-screen text-center">
       <h2 className="text-7xl font-bold text-red-500 mb-5">{error.status}</h2>
       <h3 className="font-semibold text-2xl">Oops!! Page not Found</h3>
       <h4 className="font-semibold">
