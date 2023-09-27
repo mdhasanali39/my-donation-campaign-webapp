@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const DonatedCard = ({ campaign }) => {
   const {
@@ -14,10 +15,10 @@ const DonatedCard = ({ campaign }) => {
   return (
     <div
       style={{ backgroundColor: `${color_of_card_bg}` }}
-      className={`relative flex  rounded-lg bg-clip-border text-gray-700`}
+      className={`relative flex max-[940px]:flex-col min-[941px]:flex-row  rounded-lg bg-clip-border text-gray-700`}
     >
       <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
-        <img className="h-full" src={images[1]} alt={title} />
+        <img className="h-full  max-[940px]:w-full max-[940px]:rounded-lg" src={images[1]} alt={title} />
       </div>
       <div className="p-6">
         {/* category  */}
@@ -53,5 +54,7 @@ const DonatedCard = ({ campaign }) => {
     </div>
   );
 };
-
+DonatedCard.propTypes = {
+  campaign: PropTypes.object.isRequired,
+}
 export default DonatedCard;

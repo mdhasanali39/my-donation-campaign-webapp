@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <div className={loc.pathname === '/' ? 'overlay' : ''}>
-            <div className="flex justify-between items-center max-w-[1300px] mx-auto px-5 pt-4">
+            <div className="flex justify-between items-center max-w-[1300px] mx-auto px-5 pt-8">
             <Logo></Logo>
             <Navbar></Navbar>
             </div>
