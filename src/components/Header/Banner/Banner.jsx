@@ -14,7 +14,7 @@ const Banner = () => {
 
 
   return (
-    <div className="flex justify-center items-center min-h-[89vh]">
+    <div className="flex justify-center items-center min-h-[88vh]">
       <div className="flex flex-col items-center px-3">
         <h1 className="mb-10 text-4xl md:text-5xl font-bold text-center">
           I Grow By Helping People In Need
